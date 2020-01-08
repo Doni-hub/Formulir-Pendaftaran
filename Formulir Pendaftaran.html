@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir</title>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Formulir Pendaftaran</legend>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal"/>
+        </p>
+        <p>
+            <label>Umur :</label>
+            <input type="number" min="40" max="90" name="umur"/>
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Alamat :</label>
+            <input type="text" name="alamat" placeholder="Alamat Sekarang..."/>
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+            <label>Daftar Riwayat Pekerjaan:</label>
+            <textarea name="daftar"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
